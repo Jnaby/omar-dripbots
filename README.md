@@ -1,2 +1,2 @@
-# omar-dripbots
-omar-dripbots
+# dines20bot-room
+dines20bot-room
