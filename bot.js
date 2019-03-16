@@ -35,7 +35,7 @@ client.on('ready', () => {
  client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("518756105166520320");
-let c = g.channels.get("518828446001004546");
+let c = g.channels.get("556120999079313435");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
@@ -48,7 +48,7 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
  
  
 const adminprefix = "#";
-const devs = ['323160008411971585'];
+const devs = ['552284272015310848'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
