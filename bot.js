@@ -32,18 +32,16 @@ client.on('ready', () => {
 
 });
  
- client.on('ready',async () => {
-console.log("Starting..");
-let g = client.guilds.get("518756105166520320");
-let c = g.channels.get("556120999079313435");
-if(c.type === 'voice') {
-c.join();
-setInterval(() => {
-if(!g.me.voiceChannel) c.join();
-}, 1);
-} else {
-console.log("Failed To Join:\n The Channel Type isn't \"text\"");
-}
+const Discord = require("discord.js");
+const client = new Discord.Client();
+
+client.on('message', message => {
+if (message.content === "test") {
+  var ms = 120000;
+      var interval = setInterval (function () {
+        message.channel.send("لا إله الا الله, سبحان الله, الحمدالله, الله اكبر")
+      }, ms); 
+    }
 });
  
  
